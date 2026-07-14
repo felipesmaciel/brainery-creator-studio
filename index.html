@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Brainery Creator Studio helps creators prepare original educational videos and send them to TikTok for creator review.">
+  <title>Brainery Creator Studio</title>
+  <style>
+    :root { --ink:#152028; --muted:#53636c; --line:#dbe2e5; --canvas:#f7faf8; --accent:#d94d3f; --green:#80a54c; --card:#ffffff; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--canvas); font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height:1.55; }
+    header { border-bottom:1px solid var(--line); background:#fff; }
+    .wrap { width:min(980px, calc(100% - 40px)); margin:0 auto; }
+    .nav { min-height:70px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { display:flex; align-items:center; gap:11px; font-weight:760; letter-spacing:0; text-decoration:none; color:var(--ink); }
+    .mark { width:30px; height:30px; border-radius:5px; background:var(--green); position:relative; }
+    .mark:before, .mark:after { content:""; position:absolute; width:9px; height:15px; border:2px solid #fff; border-radius:9px 9px 2px 2px; top:6px; }
+    .mark:before { left:5px; transform:rotate(-24deg); } .mark:after { right:5px; transform:rotate(24deg); }
+    nav { display:flex; gap:18px; font-size:.92rem; }
+    nav a { color:var(--muted); text-decoration:none; } nav a:hover { color:var(--ink); }
+    main { padding:76px 0 44px; }
+    .kicker { font-size:.78rem; font-weight:760; letter-spacing:0; text-transform:uppercase; color:#607b32; }
+    h1 { max-width:760px; font-size:clamp(2.2rem, 6vw, 4.4rem); line-height:1.06; margin:12px 0 22px; letter-spacing:0; }
+    .lead { max-width:690px; color:var(--muted); font-size:1.14rem; margin:0; }
+    .flow { margin:60px 0; display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; }
+    .step { border:1px solid var(--line); border-radius:8px; padding:24px; background:var(--card); min-height:200px; }
+    .number { color:var(--accent); font-weight:800; font-size:.9rem; }
+    h2 { margin:17px 0 8px; font-size:1.15rem; letter-spacing:0; }
+    .step p { margin:0; color:var(--muted); font-size:.95rem; }
+    .notice { border-left:4px solid var(--green); background:#edf4e5; padding:18px 20px; color:#334226; }
+    footer { padding:30px 0 44px; color:var(--muted); font-size:.88rem; }
+    @media (max-width:700px) { main { padding-top:52px; } .flow { grid-template-columns:1fr; margin:42px 0; } nav { gap:12px; } .wrap { width:min(100% - 30px, 980px); } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="./"><span class="mark" aria-hidden="true"></span><span>Brainery Creator Studio</span></a>
+      <nav aria-label="Legal links"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <p class="kicker">Creator-controlled TikTok workflow</p>
+    <h1>Prepare the video here. Make the final post decision in TikTok.</h1>
+    <p class="lead">Brainery Creator Studio is a desktop workspace for original educational videos. It helps a creator select a finished video, check its caption and source record, and send it to the creator's TikTok inbox for final editing and posting.</p>
+    <section class="flow" aria-label="How it works">
+      <article class="step"><span class="number">01</span><h2>Connect the account</h2><p>The creator authorizes their own TikTok account and confirms the account shown before any upload begins.</p></article>
+      <article class="step"><span class="number">02</span><h2>Review one video</h2><p>The creator selects one finished original video and reviews the proposed caption before expressly confirming the transfer.</p></article>
+      <article class="step"><span class="number">03</span><h2>Finish in TikTok</h2><p>TikTok sends an inbox notification. The creator can adjust the cover, caption, visibility, and publishing choice in TikTok.</p></article>
+    </section>
+    <aside class="notice"><strong>Creator control comes first.</strong> Brainery Creator Studio does not scrape TikTok, access other accounts, or automatically publish videos.</aside>
+  </main>
+  <footer class="wrap">Independent creator tool. Not affiliated with, sponsored by, or endorsed by TikTok.</footer>
+</body>
+</html>
